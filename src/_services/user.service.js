@@ -59,6 +59,7 @@ function register(user) {
                 localStorage.setItem('user', JSON.stringify(res.data.data.token));
             }
 
+            router.push('/');
             return res;
         })
             .catch(
